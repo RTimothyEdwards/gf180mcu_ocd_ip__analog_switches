@@ -1,0 +1,424 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1791143949
+<< nwell >>
+rect -1302 1650 810 2977
+<< mvpsubdiff >>
+rect -1295 1440 753 1456
+rect -1295 1393 -1200 1440
+rect 657 1393 753 1440
+rect -1295 1377 753 1393
+rect -1295 1345 -1216 1377
+rect -1295 643 -1279 1345
+rect -1232 643 -1216 1345
+rect -1295 609 -1216 643
+rect 673 1345 753 1377
+rect 673 643 690 1345
+rect 736 643 753 1345
+rect 673 609 753 643
+rect -1295 593 753 609
+rect -1295 546 -1200 593
+rect 657 546 753 593
+rect -1295 530 753 546
+<< mvnsubdiff >>
+rect -1159 2818 667 2834
+rect -1159 2771 -1063 2818
+rect 572 2771 667 2818
+rect -1159 2755 667 2771
+rect -1159 2722 -1080 2755
+rect -1159 1895 -1143 2722
+rect -1096 1895 -1080 2722
+rect -1159 1862 -1080 1895
+rect 588 2722 667 2755
+rect 588 1895 604 2722
+rect 651 1895 667 2722
+rect 588 1862 667 1895
+rect -1159 1846 667 1862
+rect -1159 1799 -1063 1846
+rect 572 1799 667 1846
+rect -1159 1783 667 1799
+<< mvpsubdiffcont >>
+rect -1200 1393 657 1440
+rect -1279 643 -1232 1345
+rect 690 643 736 1345
+rect -1200 546 657 593
+<< mvnsubdiffcont >>
+rect -1063 2771 572 2818
+rect -1143 1895 -1096 2722
+rect 604 1895 651 2722
+rect -1063 1799 572 1846
+<< metal1 >>
+rect -1145 2771 -1063 2818
+rect 572 2771 651 2818
+rect -1145 2722 651 2771
+rect -1145 1895 -1143 2722
+rect -1096 2713 604 2722
+rect -1096 1913 -1064 2713
+rect -999 2171 -934 2245
+rect -796 2171 -731 2245
+rect -592 2171 -527 2245
+rect -888 2079 -842 2080
+rect -914 2054 -818 2079
+rect -710 2054 -614 2079
+rect -946 2042 -770 2054
+rect -946 1974 -770 1986
+rect -710 2042 -533 2054
+rect -710 1974 -533 1986
+rect -275 2015 -218 2626
+rect -72 2015 -15 2626
+rect 130 2015 187 2626
+rect 334 2015 391 2626
+rect -275 1959 -261 2015
+rect -142 1959 -130 2015
+rect -72 1959 -58 2015
+rect 60 1959 72 2015
+rect 130 1959 144 2015
+rect 263 1959 275 2015
+rect 333 1959 347 2015
+rect 466 1959 478 2015
+rect -1096 1895 604 1913
+rect -1145 1846 651 1895
+rect -1145 1799 -1063 1846
+rect 572 1799 651 1846
+rect -1279 1393 -1200 1440
+rect 657 1393 736 1440
+rect -1279 1358 736 1393
+rect -1279 1345 -1202 1358
+rect -1232 643 -1202 1345
+rect 632 1345 736 1358
+rect -1021 714 -964 1258
+rect -387 1255 -375 1311
+rect -199 1255 -187 1311
+rect -131 1255 -119 1311
+rect 57 1255 69 1311
+rect 125 1255 137 1311
+rect 313 1255 325 1311
+rect 381 1255 393 1311
+rect 569 1255 581 1311
+rect -298 1243 -187 1255
+rect -74 1243 42 1255
+rect 150 1243 266 1255
+rect 381 1253 540 1255
+rect 381 1243 490 1253
+rect -651 719 -595 1234
+rect -275 917 -218 1243
+rect -42 917 15 1243
+rect 180 917 237 1243
+rect 403 917 460 1243
+rect -653 714 -595 719
+rect -1078 658 -1066 714
+rect -890 658 -878 714
+rect -710 658 -698 714
+rect -522 658 -510 714
+rect -1279 611 -1202 643
+rect 632 643 690 1345
+rect 632 611 736 643
+rect -1279 593 736 611
+rect -1279 546 -1200 593
+rect 657 546 736 593
+<< via1 >>
+rect -946 1986 -770 2042
+rect -710 1986 -533 2042
+rect -261 1959 -142 2015
+rect -58 1959 60 2015
+rect 144 1959 263 2015
+rect 347 1959 466 2015
+rect -375 1255 -199 1311
+rect -119 1255 57 1311
+rect 137 1255 313 1311
+rect 393 1255 569 1311
+rect -1066 658 -890 714
+rect -698 658 -522 714
+<< metal2 >>
+rect -949 2042 -768 2054
+rect -949 1986 -946 2042
+rect -770 1986 -768 2042
+rect -949 1967 -768 1986
+rect -712 2042 -518 2054
+rect -712 1986 -710 2042
+rect -533 1986 -518 2042
+rect -712 1974 -518 1986
+rect -949 1961 -770 1967
+rect -877 1911 -770 1961
+rect -877 1901 -650 1911
+rect -575 1754 -518 1974
+rect -1056 1696 -518 1754
+rect -275 2015 -128 2027
+rect -275 1959 -261 2015
+rect -142 1959 -128 2015
+rect -275 1947 -128 1959
+rect -72 2015 74 2027
+rect -72 1959 -58 2015
+rect 60 1959 74 2015
+rect -72 1947 74 1959
+rect 130 2015 277 2027
+rect 130 1959 144 2015
+rect 263 1959 277 2015
+rect 130 1947 277 1959
+rect 333 2015 480 2027
+rect 333 1959 347 2015
+rect 466 1959 480 2015
+rect 333 1947 480 1959
+rect -275 1639 -218 1947
+rect -72 1639 -15 1947
+rect -542 1552 -15 1639
+rect -275 1313 -218 1552
+rect -72 1313 -15 1552
+rect 130 1646 187 1947
+rect 383 1646 440 1947
+rect 130 1542 440 1646
+rect 130 1313 187 1542
+rect 383 1313 440 1542
+rect -387 1311 -187 1313
+rect -387 1255 -375 1311
+rect -199 1255 -187 1311
+rect -387 1253 -187 1255
+rect -131 1311 69 1313
+rect -131 1255 -119 1311
+rect 57 1255 69 1311
+rect -131 1253 69 1255
+rect 125 1311 325 1313
+rect 125 1255 137 1311
+rect 313 1255 325 1311
+rect 125 1253 325 1255
+rect 381 1311 581 1313
+rect 381 1255 393 1311
+rect 569 1255 581 1311
+rect 381 1253 581 1255
+rect -1078 714 -878 716
+rect -1078 658 -1066 714
+rect -890 658 -878 714
+rect -1078 656 -878 658
+rect -710 714 -510 716
+rect -710 658 -698 714
+rect -522 658 -510 714
+rect -710 656 -510 658
+rect -1021 374 -964 656
+rect -653 652 -595 656
+rect -651 374 -595 652
+<< metal3 >>
+rect -1149 2470 666 2708
+rect -800 2247 -729 2470
+rect -1006 1774 -934 2203
+rect -596 1911 -525 2381
+rect -392 2139 -304 2470
+rect -878 1839 -472 1911
+rect -1006 1754 -914 1774
+rect -1006 1703 -847 1754
+rect -919 939 -847 1703
+rect -543 1632 -472 1839
+rect -193 1862 -96 2413
+rect 13 2139 101 2470
+rect 218 1862 305 2413
+rect 426 2134 514 2470
+rect -543 1561 -290 1632
+rect -543 939 -472 1561
+rect -193 1315 156 1862
+rect 218 1315 576 1862
+rect -391 854 -303 1204
+rect -173 943 -79 1315
+rect 48 854 136 1206
+rect 276 953 363 1315
+rect 499 854 586 1211
+rect -1297 621 753 854
+use asw_via1_2cut  asw_via1_2cut_0 paramcells
+timestamp 1791142219
+transform 0 1 -2725 -1 0 13586
+box 12431 3240 12611 3296
+use asw_via1_2cut  asw_via1_2cut_1
+timestamp 1791142219
+transform 0 1 -2949 -1 0 13586
+box 12431 3240 12611 3296
+use asw_via1_2cut  asw_via1_2cut_2
+timestamp 1791142219
+transform 0 1 -3173 -1 0 13586
+box 12431 3240 12611 3296
+use asw_via1_2cut  asw_via1_2cut_3
+timestamp 1791142219
+transform 0 1 -3397 -1 0 13586
+box 12431 3240 12611 3296
+use asw_via1_2cut  asw_via1_2cut_4
+timestamp 1791142219
+transform 0 1 -3621 -1 0 13586
+box 12431 3240 12611 3296
+use asw_via1_2cut  asw_via1_2cut_5
+timestamp 1791142219
+transform 0 1 -3809 -1 0 14731
+box 12431 3240 12611 3296
+use asw_via1_2cut  asw_via1_2cut_6
+timestamp 1791142219
+transform 0 1 -4254 -1 0 14724
+box 12431 3240 12611 3296
+use asw_via1_2cut  asw_via1_2cut_7
+timestamp 1791142219
+transform 0 1 -4033 -1 0 14780
+box 12431 3240 12611 3296
+use asw_via1_3cut  asw_via1_3cut_0 paramcells
+timestamp 1791059348
+transform 0 1 -3587 -1 0 17319
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_1
+timestamp 1791059348
+transform 0 1 -3383 -1 0 17319
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_2
+timestamp 1791059348
+transform 0 1 -3179 -1 0 17319
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_3
+timestamp 1791059348
+transform 0 1 -2975 -1 0 17319
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_4
+timestamp 1791059348
+transform 0 1 -2771 -1 0 17319
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_5
+timestamp 1791059348
+transform 0 1 -3748 1 0 -13991
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_6
+timestamp 1791059348
+transform 0 1 -3971 1 0 -13991
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_7
+timestamp 1791059348
+transform 0 1 -4115 1 0 -13991
+box 14781 3209 15139 3266
+use asw_via1_3cut  asw_via1_3cut_8
+timestamp 1791059348
+transform 0 1 -4339 1 0 -13991
+box 14781 3209 15139 3266
+use nfet_05v0_C5JAWQ  nfet_05v0_C5JAWQ_0 paramcells
+timestamp 1791142219
+transform 1 0 -806 0 1 974
+box -364 -324 364 324
+use nfet_05v0_Q93XV3  nfet_05v0_Q93XV3_0 paramcells
+timestamp 1790959639
+transform 1 0 96 0 1 1064
+box -516 -224 516 224
+use pfet_05v0_GAMEYB  pfet_05v0_GAMEYB_0 paramcells
+timestamp 1791059348
+transform 1 0 58 0 1 2358
+box -530 -378 530 378
+use pfet_05v0_KB9L9L  pfet_05v0_KB9L9L_0 paramcells
+timestamp 1791142219
+transform 1 0 -764 0 1 2184
+box -326 -204 326 204
+use via_QP3U7V  via_QP3U7V_0 paramcells
+timestamp 1791059348
+transform 1 0 -1116 0 1 2479
+box -35 -201 45 201
+use via_QP3U7V  via_QP3U7V_1
+timestamp 1791059348
+transform 1 0 -1249 0 1 885
+box -35 -201 45 201
+use via_QP3U7V  via_QP3U7V_2
+timestamp 1791059348
+transform 1 0 624 0 1 2477
+box -35 -201 45 201
+use via_QP3U7V  via_QP3U7V_3
+timestamp 1791059348
+transform 1 0 709 0 1 881
+box -35 -201 45 201
+use via_Y6Z86N  via_Y6Z86N_3 paramcells
+timestamp 1791142219
+transform 1 0 58 0 -1 2389
+box -33 -255 43 254
+use via_Y6Z86N  via_Y6Z86N_41
+timestamp 1791142219
+transform 1 0 -345 0 -1 2394
+box -33 -255 43 254
+use via_Y6Z86N  via_Y6Z86N_43
+timestamp 1791142219
+transform 1 0 463 0 -1 2389
+box -33 -255 43 254
+use via_Y6ZD6N  via_Y6ZD6N_0 paramcells
+timestamp 1791142219
+transform 1 0 -1106 0 1 913
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_1
+timestamp 1791142219
+transform 1 0 -745 0 1 904
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_2
+timestamp 1791142219
+transform 1 0 256 0 1 2292
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_3
+timestamp 1791142219
+transform 1 0 -883 0 1 1038
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_4
+timestamp 1791142219
+transform 1 0 -505 0 1 1042
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_5
+timestamp 1791142219
+transform 0 1 -917 -1 0 1731
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_6
+timestamp 1791142219
+transform 0 1 -760 -1 0 1878
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_7
+timestamp 1791142219
+transform 0 1 -415 -1 0 1601
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_8
+timestamp 1791142219
+transform -1 0 123 0 -1 1621
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_9
+timestamp 1791142219
+transform 1 0 -151 0 1 2297
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_10
+timestamp 1791142219
+transform -1 0 -532 0 -1 2242
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_11
+timestamp 1791142219
+transform -1 0 -970 0 -1 2252
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_12
+timestamp 1791142219
+transform -1 0 -755 0 -1 2285
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_13
+timestamp 1791142219
+transform 1 0 -354 0 1 1062
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_14
+timestamp 1791142219
+transform 1 0 -130 0 1 1062
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_15
+timestamp 1791142219
+transform 1 0 94 0 1 1062
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_16
+timestamp 1791142219
+transform 1 0 318 0 1 1062
+box -33 -128 43 128
+use via_Y6ZD6N  via_Y6ZD6N_17
+timestamp 1791142219
+transform 1 0 542 0 1 1062
+box -33 -128 43 128
+<< labels >>
+flabel metal3 -177 1513 133 1663 0 FreeSans 1846 90 0 0 outn
+port 5 nsew
+flabel metal3 260 1518 567 1666 0 FreeSans 1846 90 0 0 out
+port 4 nsew
+flabel metal2 -651 374 -601 494 0 FreeSans 369 90 0 0 in_n
+port 0 nsew
+flabel metal2 -1021 374 -970 494 0 FreeSans 369 90 0 0 in_p
+port 1 nsew
+flabel metal3 -1006 2475 -378 2701 0 FreeSans 1846 0 0 0 vdd
+port 2 nsew
+flabel metal3 -426 695 -69 824 0 FreeSans 1846 0 0 0 vss
+port 3 nsew
+<< properties >>
+string MASKHINTS_THKOX -2081 -336 17923 5183
+<< end >>

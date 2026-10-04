@@ -1,0 +1,17 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1791059511
+<< checkpaint >>
+rect 8309 1604 8337 2119
+<< metal1 >>
+rect 8310 2113 8336 2119
+rect 8310 1604 8336 1610
+<< via1 >>
+rect 8310 1610 8336 2113
+<< metal2 >>
+rect 8309 2113 8337 2119
+rect 8309 1610 8310 2113
+rect 8336 1610 8337 2113
+rect 8309 1604 8337 1610
+<< end >>

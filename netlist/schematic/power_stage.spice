@@ -1,0 +1,45 @@
+** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage.sch
+.subckt power_stage enable IOVDD_IN IOVSS DVSS DVDD IOVDD_OUT
+*.PININFO enable:I IOVDD_IN:I DVSS:I DVDD:I IOVSS:I IOVDD_OUT:O
+x2 net2 net1 P_DRIVE IOVDD_IN IOVSS gate_drive_large
+x1 DVDD VNW VPW DVSS net1 enable gf180mcu_as_sc_mcu7t3v3__inv_4
+x3 DVDD VNW VPW DVSS net2 net1 gf180mcu_as_sc_mcu7t3v3__inv_4
+x4[1] DVDD VNW VPW DVSS gf180mcu_as_sc_mcu7t3v3__fillcap_4
+x4[0] DVDD VNW VPW DVSS gf180mcu_as_sc_mcu7t3v3__fillcap_4
+x9 DVDD VNW VPW DVSS enable gf180mcu_as_sc_mcu7t3v3__diode_2
+XM1 IOVDD_OUT P_DRIVE IOVDD_IN IOVDD_IN pfet_05v0 L=0.50u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=720
+x4 DVSS DVDD gf180mcu_as_sc_mcu7t3v3__tap_2
+.ends
+
+* expanding   symbol:  gate_drive_large.sym # of pins=5
+** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_large.sym
+** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_large.sch
+.subckt gate_drive_large in_n in_p out vdd vss
+*.PININFO in_n:I in_p:I vdd:I vss:I out:O
+XM13 net1 S1_N vdd vdd pfet_05v0 L=0.50u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM14 net1 in_p vss vss nfet_05v0 L=0.60u W=2.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM15 S1_N net1 vdd vdd pfet_05v0 L=0.50u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM20 out S4_N vss vss nfet_05v0 L=0.60u W=5.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=60
+XM21 S4_N S3_N vss vss nfet_05v0 L=0.60u W=5.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM22 S3_N S2_N vss vss nfet_05v0 L=0.60u W=5.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=6
+XM23 S2_N S1_N vss vss nfet_05v0 L=0.60u W=5.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM24 S1_N in_n vss vss nfet_05v0 L=0.60u W=2.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM1 S2_N S1_N vdd vdd pfet_06v0 L=0.6u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 S3_N S2_N vdd vdd pfet_06v0 L=0.6u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=6
+XM3 S4_N S3_N vdd vdd pfet_06v0 L=0.6u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM4 out S4_N vdd vdd pfet_06v0 L=0.6u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=60
+.ends
+

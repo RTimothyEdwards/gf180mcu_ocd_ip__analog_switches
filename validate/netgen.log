@@ -1,0 +1,203 @@
+Netgen 1.5.323 compiled on Fri Sep 25 17:26:32 EDT 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit gate_drive_3v3
+Creating placeholder cell definition.
+
+Reading setup file /usr/share/pdk/gf180mcuD/libs.tech/netgen/gf180mcuD_setup.tcl
+
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property NRD found for device nfet_03v3
+No property NRS found for device nfet_03v3
+No property par found for device nfet_03v3
+No property sa found for device nfet_03v3
+No property sb found for device nfet_03v3
+No property sd found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property nf found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property par found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property NRD found for device pfet_03v3
+No property NRS found for device pfet_03v3
+No property par found for device pfet_03v3
+No property sa found for device pfet_03v3
+No property sb found for device pfet_03v3
+No property sd found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property nf found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property par found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+No property par1 found for device diode_nd2ps_03v3
+No property par1 found for device diode_nd2ps_03v3
+No property par1 found for device diode_pd2nw_03v3
+No property par1 found for device diode_pd2nw_03v3
+Comparison output logged to file power_stage3v3_comp.out
+Logging to file "power_stage3v3_comp.out" enabled
+Circuit nfet_03v3 contains no devices.
+Circuit pfet_03v3 contains no devices.
+
+Contents of circuit 1:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__fillcap_4'
+Circuit gf180mcu_as_sc_mcu7t3v3__fillcap_4 contains 2 device instances.
+  Class: nfet_03v3             instances:   1
+  Class: pfet_03v3             instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__fillcap_4'
+Circuit gf180mcu_as_sc_mcu7t3v3__fillcap_4 contains 2 device instances.
+  Class: nfet_03v3             instances:   1
+  Class: pfet_03v3             instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__diode_2'
+Circuit gf180mcu_as_sc_mcu7t3v3__diode_2 contains 2 device instances.
+  Class: diode_nd2ps_03v3      instances:   1
+  Class: diode_pd2nw_03v3      instances:   1
+Circuit contains 3 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__diode_2'
+Circuit gf180mcu_as_sc_mcu7t3v3__diode_2 contains 2 device instances.
+  Class: diode_nd2ps_03v3      instances:   1
+  Class: diode_pd2nw_03v3      instances:   1
+Circuit contains 3 nets, and 2 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__inv_2'
+Circuit gf180mcu_as_sc_mcu7t3v3__inv_2 contains 4 device instances.
+  Class: nfet_03v3             instances:   2
+  Class: pfet_03v3             instances:   2
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__inv_2'
+Circuit gf180mcu_as_sc_mcu7t3v3__inv_2 contains 4 device instances.
+  Class: nfet_03v3             instances:   2
+  Class: pfet_03v3             instances:   2
+Circuit contains 6 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__inv_2'
+Circuit gf180mcu_as_sc_mcu7t3v3__inv_2 contains 2 device instances.
+  Class: nfet_03v3             instances:   1
+  Class: pfet_03v3             instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'gf180mcu_as_sc_mcu7t3v3__inv_2'
+Circuit gf180mcu_as_sc_mcu7t3v3__inv_2 contains 2 device instances.
+  Class: nfet_03v3             instances:   1
+  Class: pfet_03v3             instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'gate_drive_3v3'
+Circuit gate_drive_3v3 contains 84 device instances.
+  Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_03v3             instances:  40
+  Class: pfet_03v3             instances:  40
+  Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   2
+  Class: gf180mcu_as_sc_mcu7t3v3__inv_2 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'gate_drive_3v3'
+Circuit gate_drive_3v3 contains 8 device instances.
+  Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_03v3             instances:   2
+  Class: pfet_03v3             instances:   2
+  Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   2
+  Class: gf180mcu_as_sc_mcu7t3v3__inv_2 instances:   1
+Circuit contains 6 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'gate_drive_3v3'
+Circuit gate_drive_3v3 contains 7 device instances.
+  Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_03v3             instances:   2
+  Class: pfet_03v3             instances:   2
+  Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   1
+  Class: gf180mcu_as_sc_mcu7t3v3__inv_2 instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'gate_drive_3v3'
+Circuit gate_drive_3v3 contains 7 device instances.
+  Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_03v3             instances:   2
+  Class: pfet_03v3             instances:   2
+  Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   1
+  Class: gf180mcu_as_sc_mcu7t3v3__inv_2 instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'power_stage3v3'
+Circuit power_stage3v3 contains 521 device instances.
+  Class: gate_drive_3v3        instances:   1
+  Class: pfet_03v3             instances: 520
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'power_stage3v3'
+Circuit power_stage3v3 contains 2 device instances.
+  Class: gate_drive_3v3        instances:   1
+  Class: pfet_03v3             instances:   1
+Circuit contains 5 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'power_stage3v3'
+Circuit power_stage3v3 contains 2 device instances.
+  Class: gate_drive_3v3        instances:   1
+  Class: pfet_03v3             instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'power_stage3v3'
+Circuit power_stage3v3 contains 2 device instances.
+  Class: gate_drive_3v3        instances:   1
+  Class: pfet_03v3             instances:   1
+Circuit contains 5 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 5 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "power_stage3v3_comp.out" disabled
+LVS Done.

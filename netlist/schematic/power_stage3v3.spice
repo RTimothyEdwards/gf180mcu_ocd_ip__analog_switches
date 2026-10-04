@@ -1,0 +1,29 @@
+** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage3v3.sch
+.subckt power_stage3v3 enable DVDD_IN DVSS DVDD_OUT
+*.PININFO enable:I DVDD_IN:I DVSS:I DVDD_OUT:O
+XM2 DVDD_OUT P_DRIVE DVDD_IN DVDD_IN pfet_03v3 L=0.28u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=520
+x1 DVDD_IN DVSS P_DRIVE enable gate_drive_3v3
+.ends
+
+* expanding   symbol:  gate_drive_3v3.sym # of pins=4
+** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_3v3.sym
+** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_3v3.sch
+.subckt gate_drive_3v3 dvdd dvss out in
+*.PININFO in:I dvdd:B dvss:B out:O
+XM1 net2 net1 dvdd dvdd pfet_03v3 L=0.28u W=11.04u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 net2 net1 dvss dvss nfet_03v3 L=0.28u W=8.0u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+x3 dvdd dvdd dvss dvss net1 in gf180mcu_as_sc_mcu7t3v3__inv_2
+x2 dvdd dvdd dvss dvss in gf180mcu_as_sc_mcu7t3v3__diode_2
+x4[1] dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
+x4[0] dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
+x5[1] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
+x5[0] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
+XM3 out net2 dvdd dvdd pfet_03v3 L=0.28u W=44.16u nf=32 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM4 out net2 dvss dvss nfet_03v3 L=0.28u W=32.0u nf=32 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+

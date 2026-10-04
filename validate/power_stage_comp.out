@@ -1,0 +1,208 @@
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_06v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_06v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_06v0 and pfet_06v0 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_as_sc_mcu7t3v3__fillca |Circuit 2: gf180mcu_as_sc_mcu7t3v3__fillca 
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_as_sc_mcu7t3v3__fillca |Circuit 2: gf180mcu_as_sc_mcu7t3v3__fillca 
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_as_sc_mcu7t3v3__fillcap_4 and gf180mcu_as_sc_mcu7t3v3__fillcap_4 are equivalent.
+
+Class gf180mcu_as_sc_mcu7t3v3__inv_4 (0):  Merged 6 parallel devices.
+Class gf180mcu_as_sc_mcu7t3v3__inv_4 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: gf180mcu_as_sc_mcu7t3v3__inv_4  |Circuit 2: gf180mcu_as_sc_mcu7t3v3__inv_4  
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (4->1)                           |pfet_03v3 (4->1)                           
+nfet_03v3 (4->1)                           |nfet_03v3 (4->1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_as_sc_mcu7t3v3__inv_4  |Circuit 2: gf180mcu_as_sc_mcu7t3v3__inv_4  
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_as_sc_mcu7t3v3__inv_4 and gf180mcu_as_sc_mcu7t3v3__inv_4 are equivalent.
+
+Cell gf180mcu_as_sc_mcu7t3v3__diode_2 (0) disconnected node: VDD
+Cell gf180mcu_as_sc_mcu7t3v3__diode_2 (0) disconnected node: VSS
+Cell gf180mcu_as_sc_mcu7t3v3__diode_2 (1) disconnected node: VDD
+Cell gf180mcu_as_sc_mcu7t3v3__diode_2 (1) disconnected node: VSS
+Subcircuit summary:
+Circuit 1: gf180mcu_as_sc_mcu7t3v3__diode_ |Circuit 2: gf180mcu_as_sc_mcu7t3v3__diode_ 
+-------------------------------------------|-------------------------------------------
+diode_pd2nw_03v3 (1)                       |diode_pd2nw_03v3 (1)                       
+diode_nd2ps_03v3 (1)                       |diode_nd2ps_03v3 (1)                       
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_as_sc_mcu7t3v3__diode_ |Circuit 2: gf180mcu_as_sc_mcu7t3v3__diode_ 
+-------------------------------------------|-------------------------------------------
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+DIODE                                      |DIODE                                      
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_as_sc_mcu7t3v3__diode_2 and gf180mcu_as_sc_mcu7t3v3__diode_2 are equivalent.
+Flattening unmatched subcell nfet_05v0_BJME2D in circuit gate_drive_large (0)(1 instance)
+Flattening unmatched subcell nfet_05v0_AGRLGL in circuit gate_drive_large (0)(1 instance)
+Flattening unmatched subcell pfet_05v0_X3LYAZ in circuit gate_drive_large (0)(1 instance)
+Flattening unmatched subcell pfet_06v0_27GLKX in circuit gate_drive_large (0)(1 instance)
+
+Class gate_drive_large (0):  Merged 172 parallel devices.
+Subcircuit summary:
+Circuit 1: gate_drive_large                |Circuit 2: gate_drive_large                
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (92->6)                          |nfet_05v0 (92->6)                          
+pfet_05v0 (4->2)                           |pfet_05v0 (4->2)                           
+pfet_06v0 (88->4)                          |pfet_06v0 (88->4)                          
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: gate_drive_large                |Circuit 2: gate_drive_large                
+-------------------------------------------|-------------------------------------------
+in_p                                       |in_p                                       
+in_n                                       |in_n                                       
+out                                        |out                                        
+outn                                       |(no pin, node is S4_N)                     
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for gate_drive_large and gate_drive_large altered to match.
+Device classes gate_drive_large and gate_drive_large are equivalent.
+Flattening unmatched subcell pfet_05v0_WX3F8K in circuit power_stage (0)(8 instances)
+
+Class power_stage (0):  Merged 720 parallel devices.
+Class power_stage (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: power_stage                     |Circuit 2: power_stage                     
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (720->1)                         |pfet_05v0 (720->1)                         
+gf180mcu_as_sc_mcu7t3v3__fillcap_4 (2->1)  |gf180mcu_as_sc_mcu7t3v3__fillcap_4 (2->1)  
+gf180mcu_as_sc_mcu7t3v3__inv_4 (2)         |gf180mcu_as_sc_mcu7t3v3__inv_4 (2)         
+gf180mcu_as_sc_mcu7t3v3__diode_2 (1)       |gf180mcu_as_sc_mcu7t3v3__diode_2 (1)       
+gate_drive_large (1)                       |gate_drive_large (1)                       
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: power_stage                     |Circuit 2: power_stage                     
+-------------------------------------------|-------------------------------------------
+DVDD                                       |DVDD                                       
+DVSS                                       |DVSS                                       
+IOVSS                                      |IOVSS                                      
+IOVDD_OUT                                  |IOVDD_OUT                                  
+IOVDD_IN                                   |IOVDD_IN                                   
+enable                                     |enable                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes power_stage and power_stage are equivalent.
+
+Final result: Circuits match uniquely.
+.

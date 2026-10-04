@@ -1,0 +1,81 @@
+* NGSPICE file created from analog_pswitch_small.ext - technology: gf180mcuD
+
+.subckt gf180mcu_as_sc_mcu7t3v3__inv_4 VDD VNW VPW VSS Y A
+X0 VDD A Y VNW pfet_03v3 ad=0.3588p pd=1.9u as=0.3588p ps=1.9u w=1.38u l=0.28u
+X1 Y A VSS VPW nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X2 Y A VDD VNW pfet_03v3 ad=0.3588p pd=1.9u as=0.3588p ps=1.9u w=1.38u l=0.28u
+X3 VSS A Y VPW nfet_03v3 ad=0.52p pd=3.04u as=0.26p ps=1.52u w=1u l=0.28u
+X4 VDD A Y VNW pfet_03v3 ad=0.7176p pd=3.8u as=0.3588p ps=1.9u w=1.38u l=0.28u
+X5 Y A VSS VPW nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X6 Y A VDD VNW pfet_03v3 ad=0.3588p pd=1.9u as=0.6072p ps=3.64u w=1.38u l=0.28u
+X7 VSS A Y VPW nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt gf180mcu_as_sc_mcu7t3v3__fillcap_4 VDD VNW VPW VSS
+X0 a_126_408# a_28_500# VSS VPW nfet_03v3 ad=0.44p pd=2.88u as=0.49p ps=2.98u w=1u l=1.03u
+X1 VDD a_126_408# a_28_500# VNW pfet_03v3 ad=0.4752p pd=3.04u as=0.5292p ps=3.14u w=1.08u l=1.03u
+.ends
+
+.subckt gf180mcu_as_sc_mcu7t3v3__diode_2 VDD VNW VPW VSS DIODE
+D0 DIODE VNW diode_pd2nw_03v3 pj=1.93u area=0.2295p
+D1 VPW DIODE diode_nd2ps_03v3 pj=1.83u area=0.209p
+.ends
+
+.subckt pfet_05v0_TLQX2N a_152_n600# a_n256_n600# a_256_n692# a_n356_n692# a_n52_n600#
++ a_356_n600# a_52_n692# a_n152_n692# w_n620_n856# a_n444_n600#
+X0 a_n52_n600# a_n152_n692# a_n256_n600# w_n620_n856# pfet_05v0 ad=1.56p pd=6.52u as=1.56p ps=6.52u w=6u l=0.5u
+X1 a_n256_n600# a_n356_n692# a_n444_n600# w_n620_n856# pfet_05v0 ad=1.56p pd=6.52u as=2.64p ps=12.88u w=6u l=0.5u
+X2 a_356_n600# a_256_n692# a_152_n600# w_n620_n856# pfet_05v0 ad=2.64p pd=12.88u as=1.56p ps=6.52u w=6u l=0.5u
+X3 a_152_n600# a_52_n692# a_n52_n600# w_n620_n856# pfet_05v0 ad=1.56p pd=6.52u as=1.56p ps=6.52u w=6u l=0.5u
+.ends
+
+.subckt pfet_05v0_GAMEYB a_n52_n200# a_356_n200# a_52_n292# a_n152_n292# a_n444_n200#
++ w_n530_n378# a_152_n200# a_n256_n200# a_256_n292# a_n356_n292#
+X0 a_356_n200# a_256_n292# a_152_n200# w_n530_n378# pfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=0.5u
+X1 a_152_n200# a_52_n292# a_n52_n200# w_n530_n378# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.5u
+X2 a_n52_n200# a_n152_n292# a_n256_n200# w_n530_n378# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.5u
+X3 a_n256_n200# a_n356_n292# a_n444_n200# w_n530_n378# pfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=0.5u
+.ends
+
+.subckt nfet_05v0_C5JAWQ a_n332_n200# a_n244_n292# a_36_n200# a_n124_n200# a_244_n200#
++ a_124_n292# VSUBS
+X0 a_244_n200# a_124_n292# a_36_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.6u
+X1 a_n124_n200# a_n244_n292# a_n332_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.6u
+.ends
+
+.subckt pfet_05v0_KB9L9L a_52_n118# a_n152_n118# a_152_n26# a_n240_n26# a_n52_n26#
++ w_n326_n204#
+X0 a_152_n26# a_52_n118# a_n52_n26# w_n326_n204# pfet_05v0 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=0.5u
+X1 a_n52_n26# a_n152_n118# a_n240_n26# w_n326_n204# pfet_05v0 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=0.5u
+.ends
+
+.subckt nfet_05v0_Q93XV3 a_n172_n192# a_n52_n100# a_172_n100# a_n396_n192# a_52_n192#
++ a_n276_n100# a_396_n100# a_276_n192# a_n484_n100# VSUBS
+X0 a_n52_n100# a_n172_n192# a_n276_n100# VSUBS nfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.6u
+X1 a_172_n100# a_52_n192# a_n52_n100# VSUBS nfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.6u
+X2 a_396_n100# a_276_n192# a_172_n100# VSUBS nfet_05v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.6u
+X3 a_n276_n100# a_n396_n192# a_n484_n100# VSUBS nfet_05v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.6u
+.ends
+
+.subckt sw_lvl_shift in_n in_p vdd vss out outn
+Xpfet_05v0_GAMEYB_0 vdd vdd outn m3_n878_1839# vdd vdd out outn outn m3_n878_1839#
++ pfet_05v0_GAMEYB
+Xnfet_05v0_C5JAWQ_0 vss in_p vss m1_n999_2171# m3_n878_1839# in_n vss nfet_05v0_C5JAWQ
+Xpfet_05v0_KB9L9L_0 m1_n999_2171# m3_n878_1839# m3_n878_1839# m1_n999_2171# vdd vdd
++ pfet_05v0_KB9L9L
+Xnfet_05v0_Q93XV3_0 m3_n878_1839# vss out m3_n878_1839# outn outn vss outn vss vss
++ nfet_05v0_Q93XV3
+.ends
+
+.subckt analog_pswitch_small in out dvdd dvss avss enable avdd
+Xgf180mcu_as_sc_mcu7t3v3__inv_4_0 dvdd dvdd dvss dvss sw_lvl_shift_0/in_n enable gf180mcu_as_sc_mcu7t3v3__inv_4
+Xgf180mcu_as_sc_mcu7t3v3__inv_4_1 dvdd dvdd dvss dvss sw_lvl_shift_0/in_p sw_lvl_shift_0/in_n
++ gf180mcu_as_sc_mcu7t3v3__inv_4
+Xgf180mcu_as_sc_mcu7t3v3__fillcap_4_1 dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
+Xgf180mcu_as_sc_mcu7t3v3__diode_2_0 dvdd dvdd dvss dvss enable gf180mcu_as_sc_mcu7t3v3__diode_2
+Xpfet_05v0_TLQX2N_0 in in sw_lvl_shift_0/outn sw_lvl_shift_0/outn out out sw_lvl_shift_0/outn
++ sw_lvl_shift_0/outn avdd out pfet_05v0_TLQX2N
+Xsw_lvl_shift_0 sw_lvl_shift_0/in_n sw_lvl_shift_0/in_p avdd avss sw_lvl_shift_0/out
++ sw_lvl_shift_0/outn sw_lvl_shift
+.ends
+
