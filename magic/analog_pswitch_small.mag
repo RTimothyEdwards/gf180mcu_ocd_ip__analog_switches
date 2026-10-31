@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1793397007
+timestamp 1793488604
 << isosubstrate >>
 rect 10920 200 11360 3060
 << nwell >>
@@ -209,4 +209,6 @@ flabel metal3 16066 1298 16401 1604 0 FreeSans 1600 0 0 0 in
 port 0 nsew
 flabel metal2 10236 576 10306 620 0 FreeSans 320 180 0 0 enable
 port 5 nsew
+<< properties >>
+string MASKHINTS_PPLUS 14117 434 14341 2955
 << end >>

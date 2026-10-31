@@ -1,11 +1,11 @@
 Netgen 1.5.323 compiled on Wed Oct 14 11:51:34 EDT 2026
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
-Call to undefined subcircuit pfet_05v0
-Creating placeholder cell definition.
 Call to undefined subcircuit nfet_03v3
 Creating placeholder cell definition.
 Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_05v0
 Creating placeholder cell definition.
 Call to undefined subcircuit nfet_05v0
 Creating placeholder cell definition.
@@ -15,11 +15,11 @@ Call to undefined subcircuit pfet_03v3
 Creating placeholder cell definition.
 Call to undefined subcircuit nfet_03v3
 Creating placeholder cell definition.
-Call to undefined subcircuit gate_drive_large
-Creating placeholder cell definition.
-Call to undefined subcircuit pfet_05v0
+Call to undefined subcircuit gate_drive_med
 Creating placeholder cell definition.
 Call to undefined subcircuit nfet_05v0
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_05v0
 Creating placeholder cell definition.
 Call to undefined subcircuit pfet_06v0
 Creating placeholder cell definition.
@@ -149,11 +149,11 @@ No property par found for device diode_nd2ps_03v3
 No property par found for device diode_nd2ps_03v3
 No property par found for device diode_pd2nw_03v3
 No property par found for device diode_pd2nw_03v3
-Comparison output logged to file power_stage_comp.out
-Logging to file "power_stage_comp.out" enabled
+Comparison output logged to file analog_switch_med_comp.out
+Logging to file "analog_switch_med_comp.out" enabled
 Circuit nfet_05v0 contains no devices.
-Circuit pfet_05v0 contains no devices.
 Circuit pfet_06v0 contains no devices.
+Circuit pfet_05v0 contains no devices.
 Circuit nfet_03v3 contains no devices.
 Circuit pfet_03v3 contains no devices.
 
@@ -216,14 +216,14 @@ Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
 Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
 
 
-Contents of circuit 1:  Circuit: 'gate_drive_large'
-Circuit gate_drive_large contains 184 device instances.
-  Class: pfet_05v0             instances:   4
-  Class: pfet_06v0             instances:  88
-  Class: nfet_05v0             instances:  92
+Contents of circuit 1:  Circuit: 'gate_drive_med'
+Circuit gate_drive_med contains 84 device instances.
+  Class: pfet_05v0             instances:   2
+  Class: pfet_06v0             instances:  40
+  Class: nfet_05v0             instances:  42
 Circuit contains 10 nets.
-Contents of circuit 2:  Circuit: 'gate_drive_large'
-Circuit gate_drive_large contains 12 device instances.
+Contents of circuit 2:  Circuit: 'gate_drive_med'
+Circuit gate_drive_med contains 12 device instances.
   Class: pfet_05v0             instances:   2
   Class: pfet_06v0             instances:   4
   Class: nfet_05v0             instances:   6
@@ -232,14 +232,14 @@ Circuit contains 10 nets.
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
-Contents of circuit 1:  Circuit: 'gate_drive_large'
-Circuit gate_drive_large contains 12 device instances.
+Contents of circuit 1:  Circuit: 'gate_drive_med'
+Circuit gate_drive_med contains 12 device instances.
   Class: pfet_05v0             instances:   2
   Class: pfet_06v0             instances:   4
   Class: nfet_05v0             instances:   6
 Circuit contains 10 nets.
-Contents of circuit 2:  Circuit: 'gate_drive_large'
-Circuit gate_drive_large contains 12 device instances.
+Contents of circuit 2:  Circuit: 'gate_drive_med'
+Circuit gate_drive_med contains 12 device instances.
   Class: pfet_05v0             instances:   2
   Class: pfet_06v0             instances:   4
   Class: nfet_05v0             instances:   6
@@ -249,49 +249,53 @@ Circuit 1 contains 12 devices, Circuit 2 contains 12 devices.
 Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
 
 
-Contents of circuit 1:  Circuit: 'power_stage'
-Circuit power_stage contains 726 device instances.
-  Class: pfet_05v0             instances: 720
-  Class: gate_drive_large      instances:   1
+Contents of circuit 1:  Circuit: 'analog_switch_med'
+Circuit analog_switch_med contains 84 device instances.
+  Class: gate_drive_med        instances:   1
+  Class: pfet_05v0             instances:  39
   Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_05v0             instances:  39
   Class: gf180mcu_as_sc_mcu7t3v3__inv_4 instances:   2
   Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   2
-Circuit contains 10 nets.
-Contents of circuit 2:  Circuit: 'power_stage'
-Circuit power_stage contains 7 device instances.
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'analog_switch_med'
+Circuit analog_switch_med contains 8 device instances.
+  Class: gate_drive_med        instances:   1
   Class: pfet_05v0             instances:   1
-  Class: gate_drive_large      instances:   1
   Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_05v0             instances:   1
   Class: gf180mcu_as_sc_mcu7t3v3__inv_4 instances:   2
   Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   2
-Circuit contains 10 nets.
+Circuit contains 11 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
-Contents of circuit 1:  Circuit: 'power_stage'
-Circuit power_stage contains 6 device instances.
+Contents of circuit 1:  Circuit: 'analog_switch_med'
+Circuit analog_switch_med contains 7 device instances.
+  Class: gate_drive_med        instances:   1
   Class: pfet_05v0             instances:   1
-  Class: gate_drive_large      instances:   1
   Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_05v0             instances:   1
   Class: gf180mcu_as_sc_mcu7t3v3__inv_4 instances:   2
   Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   1
-Circuit contains 10 nets.
-Contents of circuit 2:  Circuit: 'power_stage'
-Circuit power_stage contains 6 device instances.
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'analog_switch_med'
+Circuit analog_switch_med contains 7 device instances.
+  Class: gate_drive_med        instances:   1
   Class: pfet_05v0             instances:   1
-  Class: gate_drive_large      instances:   1
   Class: gf180mcu_as_sc_mcu7t3v3__diode_2 instances:   1
+  Class: nfet_05v0             instances:   1
   Class: gf180mcu_as_sc_mcu7t3v3__inv_4 instances:   2
   Class: gf180mcu_as_sc_mcu7t3v3__fillcap_4 instances:   1
-Circuit contains 10 nets.
+Circuit contains 11 nets.
 
-Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
-Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
 
 
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "power_stage_comp.out" disabled
+Logging to file "analog_switch_med_comp.out" disabled
 LVS Done.
