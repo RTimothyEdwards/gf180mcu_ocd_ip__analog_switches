@@ -31,7 +31,7 @@
  * matters.
  */
 
-module power_stage2 (
+module power_stage (
     `ifdef USE_POWER_PINS
 	inout wire DVDD,
 	inout wire DVSS,

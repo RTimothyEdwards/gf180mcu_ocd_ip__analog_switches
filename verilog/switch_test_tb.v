@@ -29,7 +29,6 @@
 `include "analog_pswitch_small.v"
 `include "power_stage.v"
 `include "power_stage3v3.v"
-`include "power_stage2.v"
 
 module switch_test_tb ();
 
@@ -70,20 +69,21 @@ module switch_test_tb ();
      * --------------------------------------------------------------- */
 
     reg        ena  = 1'b0;
-    reg        nena = 1'b1;		/* power_stage is active low */
     reg  real  vin;
 
     wire real sw_out, swm_out, sws_out, psw_out;
-    wire real ps_out, ps3v3_out, ps2_out;
+    wire real ps_out, ps3v3_out;
 
     analog_switch        u_sw  (.enable(ena), .in(vin), .out(sw_out));
     analog_switch_med    u_swm (.enable(ena), .in(vin), .out(swm_out));
     analog_switch_small  u_sws (.enable(ena), .in(vin), .out(sws_out));
     analog_pswitch_small u_psw (.enable(ena), .in(vin), .out(psw_out));
 
-    power_stage    u_ps    (.nenable(nena), .IOVDD_IN(vin), .IOVDD_OUT(ps_out));
-    power_stage3v3 u_ps3v3 (.enable(ena),   .DVDD_IN(vin),  .DVDD_OUT(ps3v3_out));
-    power_stage2   u_ps2   (.enable(ena),   .IOVDD_IN(vin), .IOVDD_OUT(ps2_out));
+    /* Both power stages are active high on GF180MCU.  (IHP had an
+     * active-low power_stage and an active-high power_stage2;  GF has
+     * only the one 5.0V stage, active high, named power_stage.) */
+    power_stage    u_ps    (.enable(ena), .IOVDD_IN(vin), .IOVDD_OUT(ps_out));
+    power_stage3v3 u_ps3v3 (.enable(ena), .DVDD_IN(vin),  .DVDD_OUT(ps3v3_out));
 
     /* A switch fed from a disabled one.  Its input is NaN, so its output
      * must be NaN even though it is itself enabled. */
@@ -118,11 +118,9 @@ module switch_test_tb ();
 	check_off("analog_pswitch_small at t=0", psw_out);
 	check_off("power_stage          at t=0", ps_out);
 	check_off("power_stage3v3       at t=0", ps3v3_out);
-	check_off("power_stage2         at t=0", ps2_out);
 
 	vin  = 5.0;
 	ena  = 1'b0;
-	nena = 1'b1;
 	#10;
 
 	$display("all disabled: outputs NaN");
@@ -132,14 +130,12 @@ module switch_test_tb ();
 	check_off("analog_pswitch_small disabled", psw_out);
 	check_off("power_stage          disabled", ps_out);
 	check_off("power_stage3v3       disabled", ps3v3_out);
-	check_off("power_stage2         disabled", ps2_out);
 
-	/* Enable everything.  nena goes LOW to enable power_stage;  if
-	 * that model ever loses its inversion, this is what catches it,
-	 * and it is the same polarity that validate/switch_polarity
-	 * measures in SPICE. */
+	/* Enable everything.  Every model here is active high;  the
+	 * disabled case above and this one together pin the polarity,
+	 * which is the same thing validate/switch_polarity measures in
+	 * SPICE. */
 	ena  = 1'b1;
-	nena = 1'b0;
 	#10;
 
 	$display("all enabled, in = 5.000");
@@ -149,14 +145,13 @@ module switch_test_tb ();
 	check_real("analog_pswitch_small on", psw_out,   5.000);
 	check_real("power_stage          on", ps_out,    5.000);
 	check_real("power_stage3v3       on", ps3v3_out, 5.000);
-	check_real("power_stage2         on", ps2_out,   5.000);
 
 	vin = 3.300;
 	#10;
 	$display("in = 3.300, above the pMOS floor: everything passes it");
 	check_real("analog_switch        mid", sw_out,  3.300);
 	check_real("analog_pswitch_small mid", psw_out, 3.300);
-	check_real("power_stage2         mid", ps2_out, 3.300);
+	check_real("power_stage          mid", ps_out,  3.300);
 
 	/* Below the floor the two behaviours diverge. */
 	vin = 0.0;
@@ -168,16 +163,6 @@ module switch_test_tb ();
 	check_real("analog_pswitch_small at 0V", psw_out,   PMOS_FLOOR);
 	check_real("power_stage          at 0V", ps_out,    PMOS_FLOOR);
 	check_real("power_stage3v3       at 0V", ps3v3_out, PMOS_FLOOR);
-	check_real("power_stage2         at 0V", ps2_out,   PMOS_FLOOR);
-
-	/* power_stage is active low:  nenable high turns it off while the
-	 * active-high parts stay on. */
-	vin  = 5.0;
-	nena = 1'b1;
-	#10;
-	$display("polarity: nenable=1 turns power_stage OFF, others stay on");
-	check_off ("power_stage  nenable=1", ps_out);
-	check_real("power_stage2 still on",  ps2_out, 5.000);
 
 	/* A disconnected input must not become a plausible number. */
 	$display("NaN propagates through a cascaded switch");
