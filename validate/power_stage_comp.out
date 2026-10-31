@@ -187,15 +187,15 @@ gf180mcu_as_sc_mcu7t3v3__inv_4 (2)         |gf180mcu_as_sc_mcu7t3v3__inv_4 (2)
 gf180mcu_as_sc_mcu7t3v3__diode_2 (1)       |gf180mcu_as_sc_mcu7t3v3__diode_2 (1)       
 gate_drive_large (1)                       |gate_drive_large (1)                       
 Number of devices: 6                       |Number of devices: 6                       
-Number of nets: 12                         |Number of nets: 12                         
+Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: power_stage                     |Circuit 2: power_stage                     
 -------------------------------------------|-------------------------------------------
-DVDD                                       |DVDD                                       
 DVSS                                       |DVSS                                       
+DVDD                                       |DVDD                                       
 IOVSS                                      |IOVSS                                      
 IOVDD_OUT                                  |IOVDD_OUT                                  
 IOVDD_IN                                   |IOVDD_IN                                   

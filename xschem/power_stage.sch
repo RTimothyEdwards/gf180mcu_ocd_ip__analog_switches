@@ -46,10 +46,6 @@ C {devices/ipin.sym} 1010 -710 0 0 {name=p3 lab=DVSS}
 C {devices/lab_wire.sym} 1800 -920 0 0 {name=l10 sig_type=std_logic lab=IOVDD_IN}
 C {gate_drive_large.sym} 1230 -830 0 0 {name=x2}
 C {devices/lab_wire.sym} 1400 -870 0 1 {name=l30 sig_type=std_logic lab=P_DRIVE}
-C {inv_4.sym} 770 -1010 0 0 {name=x1 VDD=DVDD VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }
-C {inv_4.sym} 880 -1010 0 0 {name=x3 VDD=DVDD VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }
-C {fillcap_4.sym} 560 -900 0 0 {name=x4[1:0] VDD=DVDD VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }
-C {diode_2.sym} 650 -1040 0 0 {name=x9 VDD=DVDD VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }
 C {devices/ipin.sym} 1010 -740 0 0 {name=p4 lab=DVDD}
 C {devices/ipin.sym} 1010 -810 0 0 {name=p2 lab=IOVSS}
 C {lab_pin.sym} 1050 -740 0 1 {name=p6 sig_type=std_logic lab=DVDD}
@@ -69,4 +65,8 @@ sa=0 sb=0 sd=0
 model=pfet_05v0
 spiceprefix=X
 }
-C {tap_2.sym} 560 -860 0 0 {name=x4 VSS=DVSS VDD=DVDD prefix=gf180mcu_as_sc_mcu7t3v3__ }
+C {tap_2.sym} 560 -860 0 0 {name=x4[1:0] VSS=DVSS VDD=DVDD prefix=gf180mcu_as_sc_mcu7t3v3__ }
+C {fillcap_4.sym} 560 -910 0 0 {name=x5[1:0] VDD=DVDD VNW=DVDD VPW=DVSS VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }
+C {diode_2.sym} 650 -1040 0 0 {name=x6 VDD=DVDD VNW=DVDD VPW=DVSS VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }
+C {inv_4.sym} 770 -1010 0 0 {name=x7 VDD=DVDD VNW=DVDD VPW=DVSS VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }
+C {inv_4.sym} 880 -1010 0 0 {name=x1 VDD=DVDD VNW=DVDD VPW=DVSS VSS=DVSS prefix=gf180mcu_as_sc_mcu7t3v3__ }

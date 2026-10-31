@@ -1,9 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1793397007
+timestamp 1793487358
 << isosubstrate >>
-rect 18653 -4459 19093 -1599
+rect 18500 -4730 19670 -1330
 << mvpsubdiff >>
 rect -1884 22114 18245 22128
 rect -1884 21982 -1710 22114
@@ -248,10 +248,11 @@ rect 18164 -3183 18396 500
 rect -3423 -4773 -3079 -3286
 rect 18085 -4771 18396 -3183
 rect 18515 -1690 18790 -915
-rect 18515 -4305 18785 -1690
+rect 18515 -4021 18785 -1690
 rect 19067 -2477 19143 -2208
 rect 19068 -3202 19126 -2618
-rect 19463 -4325 19733 -1663
+rect 18515 -4602 18799 -4021
+rect 19463 -4605 19733 -1445
 rect -2893 -4773 18396 -4771
 rect -3423 -5061 18396 -4773
 << metal2 >>
@@ -4514,6 +4515,14 @@ use gf180mcu_as_sc_mcu7t3v3__inv_4  gf180mcu_as_sc_mcu7t3v3__inv_4_1
 timestamp 1751633659
 transform 0 1 18739 -1 0 -3141
 box -86 -86 870 870
+use gf180mcu_as_sc_mcu7t3v3__tap_2  gf180mcu_as_sc_mcu7t3v3__tap_2_0 $PDKPATH/libs.ref/gf180mcu_as_sc_mcu7t3v3/mag
+timestamp 1759751540
+transform 0 1 18739 -1 0 -1461
+box -86 -86 310 870
+use gf180mcu_as_sc_mcu7t3v3__tap_2  gf180mcu_as_sc_mcu7t3v3__tap_2_1
+timestamp 1759751540
+transform 0 1 18739 -1 0 -4373
+box -86 -86 310 870
 use pfet_05v0_WX3F8K  pfet_05v0_WX3F8K_0 paramcells
 array 0 7 2328 0 0 14
 timestamp 1792702735
